@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/background_white"
+    android:padding="18dp"
+    tools:context=".presentation.fragments.CatFactFragment">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:cardCornerRadius="20dp">
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_margin="12dp"
+            android:id="@+id/tvCatFact"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/wait"
+            android:textColor="?attr/noteTextColor"
+            android:textSize="18sp"/>
+
+    </androidx.cardview.widget.CardView>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnGetNewFact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/paw_bold"
+        android:backgroundTint="?attr/colorPrimary"
+        android:scaleType="center"
+        app:maxImageSize="48dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="64dp"/>
+
+
+</LinearLayout>

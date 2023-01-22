@@ -1,0 +1,20 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.MeowDiary" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/pan_purple</item>
+        <item name="colorPrimaryVariant">@color/pan_purple</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="iconColor">@color/spanish_grey</item>
+        <item name="noteTextColor">@color/chimney_sweep</item>
+        <item name="hintBackgroundColor">@color/white_edgar</item>
+    </style>
+
+    <style name="Theme.App.DiarySplashScreen" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/pan_purple</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/splash_logo</item>
+        <item name="postSplashScreenTheme">@style/Theme.MeowDiary</item>
+    </style>
+
+</resources>

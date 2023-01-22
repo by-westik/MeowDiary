@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".presentation.fragments.InformationFragment"
+    android:padding="18dp"
+    android:background="@color/background_white"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/meow_diary"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="18dp"
+        app:cardCornerRadius="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:padding="18dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="?attr/noteTextColor"
+            android:text="@string/base_text"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/technology"
+            android:textSize="18sp"
+            android:textColor="?attr/noteTextColor"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:drawablePadding="10dp"
+            android:text="@string/kotlin"
+            android:textSize="18sp"
+            android:textColor="?attr/noteTextColor"
+            app:drawableTint="?attr/colorPrimary"
+            app:drawableLeftCompat="@drawable/paw_bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:drawablePadding="10dp"
+            android:text="@string/mvvm"
+            android:textSize="18sp"
+            android:textColor="?attr/noteTextColor"
+            app:drawableLeftCompat="@drawable/paw_bold"
+            app:drawableTint="?attr/colorPrimary" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:drawablePadding="10dp"
+            android:text="@string/hilt"
+            android:textSize="18sp"
+            android:textColor="?attr/noteTextColor"
+            app:drawableTint="?attr/colorPrimary"
+            app:drawableLeftCompat="@drawable/paw_bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:drawablePadding="10dp"
+            android:text="@string/navigation"
+            android:textSize="18sp"
+            android:textColor="?attr/noteTextColor"
+            app:drawableLeftCompat="@drawable/paw_bold"
+            app:drawableTint="?attr/colorPrimary" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:drawablePadding="10dp"
+                android:text="@string/retrofit"
+                android:textSize="18sp"
+                android:textColor="?attr/noteTextColor"
+                app:drawableLeftCompat="@drawable/paw_bold"
+                app:drawableTint="?attr/colorPrimary"
+                />
+
+            <TextView
+                android:layout_marginTop="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/course_information"
+                android:textSize="18sp"
+                android:textColor="?attr/noteTextColor"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

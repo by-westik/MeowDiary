@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">MeowDiary</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="date_hint">29 февраля 12:23</string>
+    <string name="search">Поиск</string>
+    <string name="note_title">Заголовок</string>
+    <string name="note_body">Начните ввод</string>
+    <string name="favorites">Избранное</string>
+    <string name="notes">Заметки</string>
+    <string name="information">О проекте</string>
+    <string name="start_text">Введите что-нибудь...</string>
+    <string name="base_text">   Это простое приложение для ведения заметок и получения ежедневных милых фактов о котиках</string>
+    <string name="technology">  Используемые технологии</string>
+    <string name="kotlin">Kotlin</string>
+    <string name="mvvm">MVVM</string>
+    <string name="hilt">Hilt</string>
+    <string name="navigation">Navigation Component</string>
+    <string name="course_information">Приложение разработано в качестве выпускного проекта по курсу "Android-разработчик" от GPB IT-Factory.</string>
+    <string name="wait">Тут будет факт о котике</string>
+    <string name="notes_not_found">Заметок не найдено</string>
+    <string name="catfact">CatFact</string>
+    <string name="retrofit">Retrofit</string>
+</resources>
