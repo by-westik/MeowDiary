@@ -2,7 +2,9 @@ package com.example.meowdiary.presentation.fragments
 
 
 import android.os.Bundle
-import android.view.*
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.findNavController
@@ -10,7 +12,6 @@ import androidx.navigation.fragment.navArgs
 import com.example.meowdiary.R
 import com.example.meowdiary.databinding.FragmentNoteBinding
 import com.example.meowdiary.model.db.Note.Note
-import com.example.meowdiary.presentation.utils.ColorGenerator
 import com.example.meowdiary.presentation.utils.toast
 import com.example.meowdiary.viewmodel.NoteViewModel
 import dagger.hilt.android.AndroidEntryPoint
@@ -71,7 +72,7 @@ class NoteFragment : Fragment() {
         noteDate = Date()
         if (args.isUpdate) {
             val currentNote = args.note
-            var date: Date
+            val date: Date
             if (currentNote?.updated_at != null) {
                 date = currentNote.updated_at
             } else {
@@ -106,7 +107,7 @@ class NoteFragment : Fragment() {
             }
             view.findNavController().navigate(R.id.action_noteFragment_to_homeFragment)
         } else {
-            activity?.toast("Please enter note title")
+            activity?.toast("Пожалуйста, введите название")
         }
     }
 
